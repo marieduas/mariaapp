@@ -1,26 +1,35 @@
-﻿namespace mariaapp;
+﻿using UIKit;
+
+namespace mariaapp;
+
 
 public partial class MainPage : ContentPage
-{
-	int count = 0;
-
-	public MainPage()
 	{
-		InitializeComponent();
+		Results resultado;
+		public MainPage()
+		{
+			InitializeComponent();
+			TestalLayout();
+			PreencherPagina();
+		}
+		void TestalLayout();
+		{
+			resultado = new Results();
+			resultado.temp = 23;
+			resultado.description = "Tempo nublado";
+		}
+		void PreencherPagina()
+		{
+			labelTemp.Text = resultado.temp.ToString();
+
+			labeldescription.Text = resultado.description();
+
+			labelcity.Text = resultado.temp.ToString(); 
+		}
+
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
 	
 
-	}
+	
 

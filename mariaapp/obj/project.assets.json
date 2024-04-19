@@ -32826,11 +32826,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\mariaapp-3\\mariaapp\\mariaapp.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\mariaapp\\mariaapp\\mariaapp.csproj",
       "projectName": "mariaapp",
-      "projectPath": "C:\\Users\\Aluno\\mariaapp-3\\mariaapp\\mariaapp.csproj",
+      "projectPath": "C:\\Users\\Aluno\\mariaapp\\mariaapp\\mariaapp.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\mariaapp-3\\mariaapp\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\mariaapp\\mariaapp\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [

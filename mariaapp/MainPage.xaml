@@ -3,6 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mariaapp.MainPage">
 
-    
+    <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
+    <Image Source="clima.png"
+            Aspect="AspectFill"
+            Grid.RowSpan="3"
+            Grid.ColumnSpan="4"/>
+    <Frame
+            Padding="8"  
+            BackgroundColor="#068dcc"
+            CornerRadius="30"
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="10,20"
+            HeightRequest="170"
+            VerticalOptions="Start">
+    <Grid>        
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/> 
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+    <Label  x:Name="labelTemp"
+            FontSize="25"
+            Text="..."/>
+
+    <Label  x:Name="labelCity"
+            FontSize="25"
+            Text="..."/> 
+   </Grid>                     
+   </Frame>
+
+   </Grid>
 </ContentPage>
