@@ -20,14 +20,11 @@
             Grid.RowSpan="3"
             Grid.ColumnSpan="4"/>
     <Frame
-            Padding="8"  
-            BackgroundColor="#068dcc"
-            CornerRadius="30"
-            Grid.Row="0"
-            Grid.Column="0"
-            Margin="10,20"
-            HeightRequest="170"
-            VerticalOptions="Start">
+           Grid.Row="1"
+           Grid.RowSpan="2"
+           Grid.Column="0"
+           Marigin="10,0"
+           BackgroundColor="#0930F7"/>
     <Grid>        
         <Grid.RowDefinitions>
           <RowDefinition Height="*"/> 
@@ -35,15 +32,37 @@
           <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-    <Label  x:Name="labelTemp"
+    <Label  x:Name="labelCidade"
+            TextColor="Whide"
+            Grid.Row="0"
             FontSize="25"
-            Text="..."/>
+            HorizontalOptions="Fill"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center"/>
+            
 
-    <Label  x:Name="labelCity"
+    <Label  x:Name="labelTemperatura"
+            TextColor="Whide"
+            Grid.Row="1"
             FontSize="25"
-            Text="..."/> 
+            HorizontalOptions="Fill"
+            HOrizontalTextAlignment="Center"
+            VerticalOptions="Center"/>
+
+    <Label  x:Name="labeldescrição"
+            TextColor="Whide"
+            Grid.Row="2"
+            FontSize="25"
+            HorizontalOptions="Fill"
+            HOrizontalTextAlignment="Center"
+            VerticalOptions="Center"/>
+            
    </Grid>                     
    </Frame>
-
+   <Frame   Grid.Row="1"
+            Grid.Colunm="1"
+            Padding="0"
+            BackgroundColor="#0930F7"/>
+   
    </Grid>
 </ContentPage>
