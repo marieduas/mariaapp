@@ -4,15 +4,14 @@ using Windows.ApplicationModel.Search;
 
 namespace mariaapp;
 
-
-public partial class MainPage : ContentPage
-	{
-		int count = 0;
-		UISearchResultsUpdating results = new Results();
+{
+	int count = 0;
+	Results results=new Results();
+	
 		public MainPage()
 		{
 			InitializeComponent();
-			TestalLayout();
+			TestaLayout();
 			PreencherTela();
 		}
 		void PreencherTela()
@@ -52,7 +51,7 @@ public partial class MainPage : ContentPage
 		results.tenp=25;
 		results.Description="Tempo Nublado";
 		results.condition_code="28";
-		results,img_id="28";
+		results.img_id="28";
 		results.city="Apucarana,PR";
 		results.RainCount=5;
 		results.cloudiness=2;
