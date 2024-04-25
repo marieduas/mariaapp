@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mariaapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+079349d055bfef412f8189145c72cd0d43a567f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f957278c5e827b21211620b055564bba86abb2af")]
 [assembly: System.Reflection.AssemblyProductAttribute("mariaapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mariaapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

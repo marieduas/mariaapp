@@ -1,9 +1,7 @@
-﻿using System.Reflection.Emit;
-using UIKit;
-using Windows.ApplicationModel.Search;
+﻿namespace mariaapp;
 
-namespace mariaapp;
-
+public partial class MainPage : ContentPage
+ 
 {
 	int count = 0;
 	Results results=new Results();
