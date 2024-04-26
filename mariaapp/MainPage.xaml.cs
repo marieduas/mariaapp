@@ -15,7 +15,7 @@ public partial class MainPage : ContentPage
 		void PreencherTela()
 		{
 			labelTemperatura.Text=results.temp.ToString();
-			labelChuva.Text=results.RetainCount.ToString();
+			labelChuva.Text=results..ToString();
 			labelUmidade.Text=results.humidity.ToString(); 
 			labelAmanhecer.Text=results.sunrise;
 			LabelAnoitecer.Text=results.sunset;

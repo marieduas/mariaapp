@@ -24,7 +24,7 @@
            Grid.RowSpan="2"
            Grid.Column="0"
            Marigin="10,0"
-           BackgroundColor="#0930F7"/>
+           BackgroundColor="#0930F7">
     <Grid>        
         <Grid.RowDefinitions>
           <RowDefinition Height="*"/> 
@@ -113,7 +113,7 @@
            Grid.Column="1"
            Padding="0"
            Marigin="10,0"
-           BackgroundColor="#0930F7"/>
+           BackgroundColor="#0930F7">
   <Grid>
   <Grid.RowDefinitions>
 
@@ -219,7 +219,7 @@
         Grid.Column="2"
         Padding="0"
         Margin="10,0"
-        BackgroundColor="#0930F7"/>
+        BackgroundColor="#0930F7">
 <Grid>
 <Grid.RowDefinitions>
         <RowDefinition Height="70"/>
@@ -255,6 +255,6 @@
         Grid.Column="0"
         Margin="10,0"
         Grid.ColumnSpan="3"
-        BackgroundColor="#0930F7"/>
+        BackgroundColor="#0930F7">
         
 </ContentPage>
