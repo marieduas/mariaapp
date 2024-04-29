@@ -9,59 +9,59 @@ public partial class MainPage : ContentPage
 		public MainPage()
 		{
 			InitializeComponent();
-			TestaLayout();
-			PreencherTela();
+			TestLayout();
 		}
+	
 		void PreencherTela()
 		{
 			labelTemperatura.Text=results.temp.ToString();
-			labelChuva.Text=results..ToString();
+			labelChuva.Text=results.rain.ToString();
 			labelUmidade.Text=results.humidity.ToString(); 
 			labelAmanhecer.Text=results.sunrise;
 			LabelAnoitecer.Text=results.sunset;
-			LabelForça.Text=results.wind_speedy;
-			LabelDireção.Text=results.wind_direction.ToString();
-			LabelFasedaLua.Text=results.moon_plase;
+			LabelForça.Text=results.whind_speedy;
+			LabelDireção.Text=results.whind_direcion.ToString();
+			LabelFasedaLua.Text=results.moon_phase;
 			LabelDescrição.Text=results.description;
 			LabelCidade.Text=results.city;
 
-			if (results.currently=="dia")
-	    {
-				if (Results.rain>=2)
-				ImagemDeFundo.Sourse="diachuvoso.jpg";
-				else if (Results.cloudiness>=1)
-				ImagemDeFundo.Sourse="dianublado.jpg";
+			if (results.curenty =="dia")
+			{
+				if (results.rain>=2)
+					ImagemDeFundo.Source="diachuvoso.jpg";
+				else if (results.cloudiness>=1)
+					ImagemDeFundo.Source="dianublado.jpg";
 				else
-				ImagemDeFundo.Sourse="diaensolarado.jpg";
-		}
-		else
-		{
-			if (results.Rain>=5)
-			ImagemDeFundo.Sourse="noitechuvosa.jpg";
-			else if (results.cloudiness>=7)
-			ImagemDeFundo.Sourse="noitenublada.jpg";
+					ImagemDeFundo.Source="diaensolarado.jpg";
+			}
 			else
-			ImagemDeFundo.Sourse="noitelimpa.jpg";
+			{
+				if (results.rain>=5)
+					ImagemDeFundo.Source="noitechuvosa.jpg";
+				else if (results.cloudiness>=7)
+					ImagemDeFundo.Source="noitenublada.jpg";
+				else
+					ImagemDeFundo.Source="noitelimpa.jpg";
+			}
 		}
-}
-	void TestalLayout()
+	void TestLayout()
 	{
-		results.tenp=25;
-		results.Description="Tempo Nublado";
+		results.temp=25;
+		results.description="Tempo Nublado";
 		results.condition_code="28";
 		results.img_id="28";
 		results.city="Apucarana,PR";
-		results.RainCount=5;
+		results.rain=5;
 		results.cloudiness=2;
 		results.humidity=90;
 		results.sunrise="06:15";
 		results.sunset="18:25";
 		results.whind_speedy="4.99 km/h";
-		results.wihnd_direction=40;
-		results.moon_plase="Crescente";
-		results.currenty="noite";
+		results.whind_direcion=40;
+		results.moon_phase="Crescente";
+		results.curenty="noite";
 	}
-	}
+}
 
 	
 

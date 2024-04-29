@@ -10,14 +10,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.companyname.mariaapp")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PublisherName", "User Name")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Name", "mariaapp")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Version", "1.0.0.1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("mariaapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+dc95091583f3ef4ddf98deb263976af63efca0b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44501dff8e7b3cf40b2a92216b4145e7943e536c")]
 [assembly: System.Reflection.AssemblyProductAttribute("mariaapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mariaapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

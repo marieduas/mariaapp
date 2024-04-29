@@ -43,3 +43,6 @@ C:\Users\Aluno\mariaapp\mariaapp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ma
 C:\Users\Aluno\mariaapp\mariaapp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mariaapp.AssemblyInfo.cs
 C:\Users\Aluno\mariaapp\mariaapp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mariaapp.csproj.CoreCompileInputs.cache
 C:\Users\Aluno\mariaapp\mariaapp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mariaapp.sourcelink.json
+C:\Users\Aluno\mariaapp\mariaapp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mariaapp.dll
+C:\Users\Aluno\mariaapp\mariaapp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\refint\mariaapp.dll
+C:\Users\Aluno\mariaapp\mariaapp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mariaapp.pdb

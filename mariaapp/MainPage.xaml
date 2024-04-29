@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mariaapp.MainPage">
-
     <Grid>
         <Grid.RowDefinitions>
           <RowDefinition Height="*"/>
@@ -16,114 +15,114 @@
         </Grid.ColumnDefinitions>
 
     <Image Source="clima.png"
-            Aspect="AspectFill"
-            Grid.RowSpan="3"
-            Grid.ColumnSpan="4"/>
+           x:Name="ImagemDeFundo"
+           Aspect="AspectFill"
+           Grid.RowSpan="3"
+           Grid.ColumnSpan="4"/>
     <Frame
            Grid.Row="1"
            Grid.RowSpan="2"
            Grid.Column="0"
-           Marigin="10,0"
+           Margin="10,0"
            BackgroundColor="#0930F7">
-    <Grid>        
-        <Grid.RowDefinitions>
-          <RowDefinition Height="*"/> 
-          <RowDefinition Height="*"/>
-          <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        <Grid>        
+                <Grid.RowDefinitions>
+                <RowDefinition Height="*"/> 
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
-    <Label  x:Name="labelCidade"
-            TextColor="Whide"
-            Grid.Row="0"
-            FontSize="25"
-            HorizontalOptions="Fill"
-            HorizontalTextAlignment="Center"
-            VerticalOptions="Center"/>
+                <Label  x:Name="LabelCidade"
+                        TextColor="White"
+                        Grid.Row="0"
+                        FontSize="25"
+                        HorizontalOptions="Fill"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Center"/>
+                        
+
+                <Label  x:Name="labelTemperatura"
+                        TextColor="White"
+                        Grid.Row="1"
+                        FontSize="25"
+                        HorizontalOptions="Fill"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Center"/>
+
+                <Label  x:Name="LabelDescrição"
+                        TextColor="White"
+                        Grid.Row="2"
+                        FontSize="25"
+                        HorizontalOptions="Fill"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Center"/>
             
-
-    <Label  x:Name="labelTemperatura"
-            TextColor="Whide"
-            Grid.Row="1"
-            FontSize="25"
-            HorizontalOptions="Fill"
-            HOrizontalTextAlignment="Center"
-            VerticalOptions="Center"/>
-
-    <Label  x:Name="labeldescrição"
-            TextColor="Whide"
-            Grid.Row="2"
-            FontSize="25"
-            HorizontalOptions="Fill"
-            HOrizontalTextAlignment="Center"
-            VerticalOptions="Center"/>
-            
-   </Grid>                     
+        </Grid>                     
    </Frame>
    <Frame   Grid.Row="1"
-            Grid.Colunm="1"
+            Grid.Column="1"
             Padding="0"
-            BackgroundColor="#0930F7"/>
-   </Grid>
-   <Grid.RowDefinition>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="*"/>
-   </Grid.RowDefinition>
+            BackgroundColor="#0930F7">
+   <Grid>
+        <Grid.RowDefinition>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+        </Grid.RowDefinition>
 
-   <Label   Text="Chuva"
-            TextColor="White"
-            Grid.Row="0"
-            Grid.Column="0"
-            FontSize="10"
-            HorizontalOptions="Fill"
-            HorizontalTextAlignment="Center"
-            VerticalOptions="Center"/>
+        <Label   Text="Chuva"
+                TextColor="White"
+                Grid.Row="0"
+                Grid.Column="0"
+                FontSize="10"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"/>
 
-  <Label    Text="Umidade"
-            TextColor="Whide"
-            Grid.Row="1"
-            Grid.Column="0"
-            FontSize="10"
-            HorizontalOptions="Fill"
-            HOrizontalTextAlignment="Center"
-            VerticalOptions="Center"/>
+        <Label    Text="Umidade"
+                TextColor="White"
+                Grid.Row="1"
+                Grid.Column="0"
+                FontSize="10"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"/>
 
-  <Label    x:Name="labelChuva"
-            TextColor="White"
-            Grid.Row="0"
-            Grid.Column="1"
-            FontSize="10"
-            HorizontalOptions="Fill"
-            HorizontalTextAlignment="Center"
-            VerticalOptions="Center"/>
+        <Label    x:Name="labelChuva"
+                TextColor="White"
+                Grid.Row="0"
+                Grid.Column="1"
+                FontSize="10"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"/>
 
-            
-  <Label    x:Name="labelUmidade"
-            TextColor="White"
-            Grid.Row="1"
-            Grid.Column="1"
-            FontSize="10"
-            HorizontalOptions="Fill"
-            HorizontalTextAlignment="Center"
-            VerticalOptions="Center"/>
+                
+        <Label    x:Name="labelUmidade"
+                TextColor="White"
+                Grid.Row="1"
+                Grid.Column="1"
+                FontSize="10"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"/>
 
   </Grid>
   </Frame>
 
-  <Fame    Grid.Row="1"
+  <Frame   Grid.Row="1"
            Grid.Column="1"
            Padding="0"
-           Marigin="10,0"
+           Margin="10,0"
            BackgroundColor="#0930F7">
   <Grid>
-  <Grid.RowDefinitions>
 
-  <Grid.ColumnDefinitions>
-           <ColumnDefinition Whide="*"/>
-           <ColumnDefinition Whide="*"/>
-  </Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
+                <ColumnDefinition Whide="*"/>
+                <ColumnDefinition Whide="*"/>
+        </Grid.ColumnDefinitions>
 
   <Label   Text="Amanhecer"
-           TextColor="Whide"
+           TextColor="White"
            Grid.Row="0"
            Grid.Column="0"
            FontSize="10"
@@ -132,7 +131,7 @@
            VerticalOptions="Center"/>
 
   <Label   Text="Anoitecer"
-           TextColor="Whide"
+           TextColor="White"
            Grid.Row="1"
            Grid.Column="1"
            FontSize="10"
@@ -140,80 +139,84 @@
            HorizontalTextAlignment="Center"
            VerticalOptions="Center"/>
 
-  <Label   x:Name="LabelAmanhecer"
-           TextColor="Whide"
+  <Label   x:Name="labelAmanhecer"
+           TextColor="White"
            Grid.Row="0"
            Grid.Column="1"
            FontSize="10"
            HorizontalOptions="Fill"
            HorizontalTextAlignment="Center"
            VerticalOptions="Center"/>
+
   <Label   x:Name="LabelAnoitecer"
-           TextColor="Whide"
+           TextColor="White"
            Grid.Row="1"
            Grid.Column="1"
            FontSize="10"
            HorizontalOptions="Fill"
            HorizontalTextAlignment="Center"
            VerticalOptions="Center"/>
+  </Grid>
+  </Frame>
 
-  <Grid>
-  <Grid.RowDefinitions>
-          <RowDefinition Height="70"/>
-          <RowDefinition Height="*"/>
-  </Grid.RowDefinitions>
-  <Grid.ColumnDefinitions>
-          <ColumnDefinition Whide="70"/>
-          <ColumnDefinition Whide="*"/>
-  <Grid.ColumnDefinitions>
+        <Frame >
+        <Grid>
+        <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+                <ColumnDefinition Whide="70"/>
+                <ColumnDefinition Whide="*"/>
+        </Grid.ColumnDefinitions>
 
-  <Label  Text="Força"
-          TextColor="Whide"
-          Grid.Row="0"
-          Grid.Column="0"
-          FontSize="10"
-          HorizontalOptions="Fill"
-          HorizontalTextAlignment="Center"
-          VerticalOptions="Center"/>
+        <Label  Text="Força"
+                TextColor="White"
+                Grid.Row="0"
+                Grid.Column="0"
+                FontSize="10"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"/>
 
-  <Label  Text="Direção"
-          TextColor="Whide"
-          Grid.Row="1"
-          Grid.Column="0"
-          FontSize="10"
-          HorizontalOptions="Fill"
-          HorizontalTextAlignment="Center"
-          VerticalOptions="Center"/>
+        <Label  Text="Direção"
+                TextColor="White"
+                Grid.Row="1"
+                Grid.Column="0"
+                FontSize="10"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"/>
 
 
-  <Label  x:Name="LabelForça"
-          TextColor="Whide"
-          Grid.Row="0"
-          Grid.Column="1"
-          FontSize="10"
-          HorizontalOptions="Fill"
-          HorizontalTextAlignment="Center"
-          VerticalOptions="Start"/>  
+        <Label  x:Name="LabelForça"
+                TextColor="White"
+                Grid.Row="0"
+                Grid.Column="1"
+                FontSize="10"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"/>  
 
- <Label  x:Name="LabelDireção"
-          TextColor="Whide"
-          Grid.Row="1"
-          Grid.Column="1"
-          FontSize="10"
-          HorizontalOptions="Fill"
-          HorizontalTextAlignment="Center"
-          VerticalOptions="Start"/>  
+        <Label  x:Name="LabelDireção"
+                TextColor="White"
+                Grid.Row="1"
+                Grid.Column="1"
+                FontSize="10"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"/>  
 
-<Label  x:Name="LabelDireçãoDoVento"
-          TextColor="Whide"
-          Grid.Row="1"
-          Grid.Column="1"
-          FontSize="10"
-          HorizontalOptions="Fill"
-          HorizontalTextAlignment="Center"
-          VerticalOptions="Start"/> 
-</Grid>
-</Frame>
+        <Label  x:Name="LabelDireçãoDoVento"
+                TextColor="White"
+                Grid.Row="1"
+                Grid.Column="1"
+                FontSize="10"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"/> 
+        </Grid>
+        </Frame>
 
 <Frame  Grid.Row="2"
         Grid.Column="2"
@@ -231,7 +234,7 @@
 </Grid.ColumnDefinitions>
 
 <Label  Text="FaseDaLua"
-        TextColor="Whide"
+        TextColor="White"
         Grid.Row="0"
         Grid.Column="0"
         FontSize="10"
@@ -239,8 +242,8 @@
         HorizontalTextAlignment="Center"
         VerticalOptions="Start"/> 
 
-<Label  x:Name="LabelFaseDaLua"
-        TextColor="Whide"
+<Label  x:Name="LabelFasedaLua"
+        TextColor="White"
         Grid.Row="0"
         Grid.Column="1"
         FontSize="10"
@@ -251,10 +254,12 @@
 </Grid>
 </Frame>
 
-<Frame  Grid.Row="4"
-        Grid.Column="0"
-        Margin="10,0"
-        Grid.ColumnSpan="3"
-        BackgroundColor="#0930F7">
+        <Frame  Grid.Row="4"
+                Grid.Column="0"
+                Margin="10,0"
+                Grid.ColumnSpan="3"
+                BackgroundColor="#0930F7">
+        </Frame>
+</Grid>
         
 </ContentPage>
