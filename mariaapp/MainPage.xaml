@@ -64,10 +64,10 @@
             Padding="0"
             BackgroundColor="#0930F7">
    <Grid>
-        <Grid.RowDefinition>
+        <Grid.RowDefinitions>
                 <RowDefinition Height="70"/>
                 <RowDefinition Height="*"/>
-        </Grid.RowDefinition>
+        </Grid.RowDefinitions>
 
         <Label   Text="Chuva"
                 TextColor="White"
@@ -117,8 +117,8 @@
   <Grid>
 
         <Grid.ColumnDefinitions>
-                <ColumnDefinition Whide="*"/>
-                <ColumnDefinition Whide="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
   <Label   Text="Amanhecer"
@@ -166,8 +166,8 @@
                 <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-                <ColumnDefinition Whide="70"/>
-                <ColumnDefinition Whide="*"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Label  Text="Força"
@@ -229,8 +229,8 @@
 </Grid.RowDefinitions>
 
 <Grid.ColumnDefinitions>
-        <ColumnDefinition Whide="70"/>
-        <ColumnDefinition Whide="*"/>
+        <ColumnDefinition Width="70"/>
+        <ColumnDefinition Width="*"/>
 </Grid.ColumnDefinitions>
 
 <Label  Text="FaseDaLua"
